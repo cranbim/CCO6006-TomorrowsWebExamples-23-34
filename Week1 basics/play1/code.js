@@ -1,5 +1,5 @@
 let res=document.getElementById("result");
-res.innerText="Soemthing changed"
+res.innerText="Something changed"
 let counter=0;
 let countInterval;
 
