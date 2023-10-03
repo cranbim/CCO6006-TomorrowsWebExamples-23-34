@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a=99
+        let b="banana"
+        let c=[1,4,2,1,3,6];
+        c[2]
+        c[2]=9
+        c[2]
+        c.length
+        console.log(a,b,c);
+        for(let i=0; i<c.length; i++){
+            console.log(c[i]);
+        }
+        console.log("\n");
+        c.forEach(function(el){
+            console.log(el);
+        });
+        console.log("\n");
+        c.forEach(el=>console.log(el)); 
+        console.log("\n");
+        if ('geolocation' in navigator) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                console.log(position);
+            });
+        } else {
+            console.log("geolocation not available");
+        }
+        console.log(navigator.connection);
+        fetch('./data.json')
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+        fetch('https://api.sunrise-sunset.org/json?lat=51.3773733&lng=-2.379944&date=today')
+            .then((response) => response.json())
+            .then((data) => console.log(data));
+        const para = document.createElement("p");
+        para.innerText = "This paragraph never appears";
+        document.body.appendChild(para);
+
+    </script>
+</head>
+<body>
+    <h1>Dave's Stupid play page</h1>
+    <p>It's all happening in the console</p>
+    <script>
+        const paraVis = document.createElement("p");
+        paraVis.innerText = "This is a paragraph, and it does show up";
+        document.body.appendChild(paraVis);
+    </script>
+</body>
+</html>
