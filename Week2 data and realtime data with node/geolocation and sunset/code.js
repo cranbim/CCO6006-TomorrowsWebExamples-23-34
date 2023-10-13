@@ -20,10 +20,10 @@ function getSunriseSunset(lat, lon){
     fetch(query)
         .then(response=>response.json())
         .then(data=>{
-            // console.log(data)
-            console.log("sunrise: "+data.results.sunrise)
+            console.log(data)
+            // console.log("sunrise: "+data.results.sunrise)
             document.getElementById("sunrise").innerText=data.results.sunrise
-            console.log("sunset: "+data.results.sunset)
+            // console.log("sunset: "+data.results.sunset)
             document.getElementById("sunset").innerText=data.results.sunset
         })
 }

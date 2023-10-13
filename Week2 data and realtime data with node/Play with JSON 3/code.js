@@ -9,6 +9,7 @@ fetch('rabbits.json')
     .then(handleRabbitData)
 
 function handleRabbitData(rabbitData){
+    console.log(rabbitData)
     let rabbitUL=document.createElement('ul')
     document.body.appendChild(rabbitUL)
     rabbitData.rabbits.forEach(rabbit=>{
