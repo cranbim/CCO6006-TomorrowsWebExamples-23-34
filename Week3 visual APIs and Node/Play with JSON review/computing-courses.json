@@ -1,0 +1,73 @@
+{
+  "courses": [
+    {
+      "course": "Cyber Security",
+      "course leader": "Ian Wills",
+      "code": "CYS",
+      "level": "undergraduate",
+      "enrollments": [
+        {
+          "level": 4,
+          "students": 27
+        },{
+          "level": 5,
+          "students": 16
+        },{
+          "level": 6,
+          "students": 0
+        }
+      ]
+    },{
+      "course": "Game Development",
+      "course leader": "Ian Wills",
+      "code": "GDT",
+      "level": "undergraduate",
+      "enrollments": [
+        {
+          "level": 4,
+          "students": 28
+        },{
+          "level": 5,
+          "students": 22
+        },{
+          "level": 6,
+          "students": 32
+        }
+      ]
+    },{
+      "course": "Computing",
+      "course leader": "Dave Cobb",
+      "code": "CPU",
+      "level": "undergraduate",
+      "enrollments": [
+        {
+          "level": 4,
+          "students": 26
+        },{
+          "level": 5,
+          "students": 32
+        },{
+          "level": 6,
+          "students": 15
+        }
+      ]
+    },{
+      "course": "Creative Computing",
+      "course leader": "Jake Hobbs",
+      "code": "CCO",
+      "level": "undergraduate",
+      "enrollments": [
+        {
+          "level": 4,
+          "students": 18
+        },{
+          "level": 5,
+          "students": 28
+        },{
+          "level": 6,
+          "students": 29
+        }
+      ]
+    }
+  ]
+}
