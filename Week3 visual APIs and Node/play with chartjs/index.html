@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+</head>
+<body>
+    <div>
+        <canvas id="myChart"></canvas>
+        <button onclick="moreData()">click me</button>
+      </div>
+      
+      
+      <script>
+        const ctx = document.getElementById('myChart');
+
+        let myData={
+            labels: ['cat','horse','fly','spider','penguin','centipede'],
+            data: [4,4,6,8,2,100],
+            label: 'number of legs'
+        }
+      
+        let chart=new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: myData.labels,
+            datasets: [{
+              label: myData.label,
+              data: myData.data,
+              borderWidth: 1,
+              borderColor: '#ff8800',
+              backgroundColor: '#ffaa33'
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+
+        function moreData(){
+            console.log(chart)
+        }
+      </script>
+</body>
+</html>
