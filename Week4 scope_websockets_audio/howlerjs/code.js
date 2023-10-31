@@ -12,6 +12,7 @@ var sounds={
 //   sound.play();
 
 function playSound(letter){
+    sounds[letter].rate(0.5)
     sounds[letter].play()
 }
 
