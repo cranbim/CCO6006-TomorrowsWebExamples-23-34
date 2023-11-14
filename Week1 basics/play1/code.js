@@ -5,12 +5,13 @@ let countInterval;
 
 
 function getLocation() {
-  if (navigator.geolocation) {
-    countInterval=setInterval(()=>console.log(counter++/10),100);
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    res.innerHTML = "Geolocation is not supported by this browser.";
-  }
+  // if (navigator.geolocation) {
+  //   countInterval=setInterval(()=>console.log(counter++/10),100);
+  //   navigator.geolocation.getCurrentPosition(showPosition);
+  // } else {
+  //   res.innerHTML = "Geolocation is not supported by this browser.";
+  // }
+  let myH1=document.getElementById("result").innerText="<h2>You clicked me</h2><p>hello</p>"
 }
 
 function showPosition(position) {
