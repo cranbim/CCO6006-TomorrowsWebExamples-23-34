@@ -22,13 +22,13 @@
         function handleDataFromServer(data){
             console.log('received from server ...')
             console.log(data)
-            // data.sheet1.forEach(function(item){
-            //     let age=new Date().getFullYear()-new Date(item.born).getFullYear()
-            //     console.log(`Name: ${item.name} Age:${age}`)
-            //     let p=document.createElement('p')
-            //     p.innerText=`Name: ${item.name} Age:${age} Colour:${item.colour}`
-            //     document.body.append(p)
-            // })
+            data.sheet1.forEach(function(item){
+                let age=new Date().getFullYear()-new Date(item.born).getFullYear()
+                console.log(`Name: ${item.name} Age:${age}`)
+                let p=document.createElement('p')
+                p.innerText=`Name: ${item.name} Age:${age} Colour:${item.colour}`
+                document.body.append(p)
+            })
         }
     </script>
 </body>
